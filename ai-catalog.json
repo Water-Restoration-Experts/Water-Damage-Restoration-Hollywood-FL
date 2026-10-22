@@ -1,0 +1,25 @@
+{
+  "specVersion": "1.0.0",
+  "entries": [
+    {
+      "type": "website",
+      "url": "https://hollywoodwaterdamageexperts.com/"
+    },
+    {
+      "type": "services",
+      "url": "https://hollywoodwaterdamageexperts.com/services/"
+    },
+    {
+      "type": "areas",
+      "url": "https://hollywoodwaterdamageexperts.com/areas/"
+    },
+    {
+      "type": "blog",
+      "url": "https://hollywoodwaterdamageexperts.com/blog/"
+    },
+    {
+      "type": "llms",
+      "url": "https://hollywoodwaterdamageexperts.com/llms.txt"
+    }
+  ]
+}
