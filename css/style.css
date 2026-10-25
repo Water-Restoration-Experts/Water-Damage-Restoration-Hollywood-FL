@@ -364,3 +364,10 @@ html, body { overflow-x: clip; }
   .logo { flex-shrink: 0; }
   .logo > div:last-child { overflow: visible; }
 }
+/* FAQ accordion - closed by default, click question to open (ClearFlow-style block) */
+.faq-item h3 { cursor: pointer; padding-right: 48px; position: relative; border-bottom: none; }
+.faq-item h3::after { content: "+"; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 1.4rem; line-height: 1; color: #0a4d8c; }
+.faq-item.open h3 { border-bottom: 1px solid #e2e8f0; }
+.faq-item.open h3::after { content: "\2212"; }
+.faq-item p { display: none; }
+.faq-item.open p { display: block; }
