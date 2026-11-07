@@ -77,3 +77,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }).finally(function () { btn.disabled = false; });
   });
 });
+
+// FAQ accordion: tap a question to open/close its answer.
+// CSS hides .faq-item p until the item has class "open".
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".faq-item h3").forEach(function (q) {
+    q.addEventListener("click", function () {
+      q.parentElement.classList.toggle("open");
+    });
+  });
+});
