@@ -337,18 +337,19 @@ html, body { overflow-x: clip; }
 .mobile-call-bar { display: none; }
 @media (max-width: 1100px) {
   .mobile-call-bar {
-    display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 999;
-    justify-content: center;
-    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
-    background: rgba(255,255,255,.97);
-    border-top: 1px solid #e2e8f0; box-shadow: 0 -4px 18px rgba(0,0,0,.12);
+    display: flex; position: fixed; left: 50%; transform: translateX(-50%);
+    bottom: calc(14px + env(safe-area-inset-bottom, 0px)); z-index: 999;
   }
   .mobile-call-bar a {
-    display: inline-flex; align-items: center; justify-content: center;
-    width: 100%; max-width: 420px; min-height: 50px;
-    background: var(--primary); color: #fff !important;
-    font-weight: 700; font-size: 1.1rem; text-decoration: none; border-radius: 12px;
+    display: inline-flex; align-items: center; gap: 8px;
+    min-height: 52px; padding: 0 20px; white-space: nowrap;
+    background: linear-gradient(180deg, #ff8c2e, #ff7a1a); color: #fff !important;
+    font-weight: 700; font-size: 15px; text-decoration: none; border-radius: 999px;
+    box-shadow: 0 10px 24px rgba(255,122,26,.45), 0 2px 6px rgba(6,32,51,.18);
   }
+  .mobile-call-bar a:active { transform: scale(.97); }
+  .mobile-call-bar svg { flex-shrink: 0; }
+  .mobile-call-bar .call-bar-247 { font-weight: 600; opacity: .85; }
   body { padding-bottom: 84px; }
 }
 
